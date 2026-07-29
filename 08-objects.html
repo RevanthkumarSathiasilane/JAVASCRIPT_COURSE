@@ -9,19 +9,25 @@
          name:'socks',
          price:1090
        };
-       console.log(product);
-       console.log(product.name);
-       console.log(product.price);
-       product.name = 'cotton socks';
-       console.log(product);
+      // console.log(product);
+       //console.log(product.name);
+       //console.log(product.price);
+       //product.name = 'cotton socks';
+       //console.log(product);
        //update
-       product.newProperty = true;
-       console.log(product);
+       //product.newProperty = true;
+       //console.log(product);
        //delete 
-       delete product.newProperty;
-       console.log(product);
+       //delete product.newProperty;
+       //console.log(product);
        //typeof
-       console.log(typeof product);
+       //console.log(typeof product);
+       const product2 = {
+         name:'shirt',
+         ['delivery-item']:'1 day'
+       };
+       console.log(product2.name);
+       console.log(product2['delivery-time']);
     </script>
   </body>
 </html>
