@@ -5,14 +5,12 @@
   </head>
   <body>
     <p>YouTube Subscribe Button</p>
-    <button class="sub-btn" onclick="changeButton()">Subscribe</button>
+    <button class="sub-btn" onclick="changeButton()"> Subscribe </button>
     <script>
       function changeButton(){
-        if(document.querySelector('.sub-btn') === 'Subscribe'){
-          document.querySelector('.sub-btn').innerHTML = 'Subscribed';
-        }else{
-          document.querySelector('.sub-btn').innerHTML = 'Subscribe';
-        }
+        const buttonElement = document.querySelector('.sub-btn');
+        if(buttonElement.innerHTML === 'Subscribe') buttonElement.innerHTML = 'Subscribed';
+        else buttonElement.innerHTML = 'Subscribe';
       }
     </script>
   </body>
