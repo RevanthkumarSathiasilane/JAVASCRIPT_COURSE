@@ -1,0 +1,16 @@
+<input id="input">
+<button onclick="add()">ADD</button>
+<ul id="ul">
+</ul>
+<script>
+  let ul = document.getElementById("ul");
+  let input = document.getElementById("input");
+  function add(){
+    let listitem = document.createElement("li");
+    listitem.innerHTML=input.value+ "<button onclick='rem(event)'>Delete</button>";
+    ul.append(listitem);
+  }
+  function rem(event){
+      event.target.parentElement.remove();
+  }
+</script>
