@@ -1,11 +1,4 @@
-const todoList = [
-  {
-    name:'make dinner',
-    dueDate:'2022-12-22'
-  },{
-    name:'wash dishes',
-    dueDate:'2022-12-22'
-  }];
+const todoList = [];
 
 renderTodoList();
 function helper(){
@@ -25,7 +18,7 @@ for(let i=0;i<todoList.length;i++){
   const html = `
   <div>${name}</div>
   <div>${dueDate}</div>
-  <button class = "btn" onclick="todoList.splice(${i},1);
+  <button class = "delete-btn" onclick="todoList.splice(${i},1);
   renderTodoList();">
   Delete
   </button>
